@@ -12,7 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* Animated mesh background */
     background-color: #f4e4ba;
     background-image: 
         radial-gradient(at 0% 0%, hsla(311,63%,71%,1) 0, transparent 50%), 
@@ -79,8 +78,6 @@ form input:focus {
     align-items: center;
     margin-top: 1.5rem;
 }
-
-/* Designing your existing select containers */
 .select-container {
     display: flex;
     align-items: center;
