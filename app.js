@@ -6,7 +6,6 @@ const fromCurr = document.querySelector(".from select");
 const toCurr = document.querySelector(".to select");
 const msg = document.querySelector(".msg");
 
-// Populate dropdowns
 for (let select of dropdowns) {
   for (let currCode in countryList) {
     let newOption = document.createElement("option");
@@ -27,7 +26,6 @@ for (let select of dropdowns) {
   });
 }
 
-// Update flag
 function updateFlag(element) {
   let currCode = element.value;
   let countryCode = countryList[currCode];
@@ -36,7 +34,6 @@ function updateFlag(element) {
   img.src = newSrc;
 }
 
-// Fetch exchange rate
 btn.addEventListener("click", async (evt) => {
   evt.preventDefault();
 
@@ -58,7 +55,6 @@ btn.addEventListener("click", async (evt) => {
   msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount.toFixed(2)} ${toCurr.value}`;
 });
 
-// Run once on page load
 window.addEventListener("load", () => {
   updateFlag(fromCurr);
   updateFlag(toCurr);
