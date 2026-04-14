@@ -9,7 +9,7 @@
 
 body {
     display: flex;
-    flex-direction: column; /* Stacks items vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -26,7 +26,6 @@ body {
 
 .container {
     background: rgba(255, 255, 255, 0.9);
-    /* Frosted glass effect for browsers that support it */
     backdrop-filter: blur(10px);
     padding: 2.5rem;
     border-radius: 2rem;
@@ -150,6 +149,6 @@ form button:active {
 }
 
 .footer {
-    margin-top: 2rem; /* Adds space between card and footer */
+    margin-top: 2rem;
     text-align: center;
 }
